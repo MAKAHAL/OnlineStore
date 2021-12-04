@@ -1,3 +1,6 @@
+//Makah Abutahoun-->
+
+
 if( document.readyState== 'loading'){ // first thing we need to check if the page is loading
     document.addEventListener('DOMContentLoaded', ready)
     }
