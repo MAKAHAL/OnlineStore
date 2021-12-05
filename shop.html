@@ -1,0 +1,650 @@
+<!-- Alexis and julie  html-->
+<!-- makah abutahoun script -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!--  we need to connect our main.cpp which is our c++ code so we add the src="" which will connect them-->
+    <script language="c++" src="Main.cpp"></script> 
+
+    <script language="c++" src="ShoppingCart_Source.cpp"></script>
+    <!-- Adding bootstrap so i can add my bars-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!-- Linking my style.css which is the style page-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- to add the 3 pages together we need to add the jv to it-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="store.js" async>
+      
+
+ </script>
+</head>
+<style>
+    .column {
+            float: left;
+            margin-left: 40px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .background{
+            border-radius: 5px;
+            background-color: rgb(235, 200, 178);
+            padding: 10px;
+        }
+        #buttons{
+            color: rgb(0, 0, 0);
+            background-color: white;
+            font-size: 20px;
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            color: rgb(0, 0, 0);
+            font-family:fantasy;
+            font-size: 25px;
+
+        }
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+        }
+        body{
+            background-image: url("images/back.jpeg" );
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            justify-self: end;
+        }
+
+        .nav-links li {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #767676;
+        }
+
+        nav a:hover {
+            color: rgb(167, 161, 132);
+            border-bottom: 1px solid black;
+        }
+</style>
+
+
+
+    <body>
+        
+        <br>
+        <br>
+        <br>
+        <br>   
+        <div class="center">
+        <h1 class="band-name band-name-large">Welcome to OrganicShop</h1>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <div class="button">
+                <ul class="nav-links">
+                    <li><a id="buttons" href="/">Home Page</a></li>
+                   
+                    <li><a id="buttons" href="contactus">Contact us!</a></li>
+                </ul>
+                </div>
+                </nav>
+            </div>
+                
+            
+
+
+           
+        </header>
+        <section class="container content-section">
+            <div class="center">
+<!-- Here the customer can select their date to pick up their groceries. -->
+        <p> Select a date</p>
+        <input type="date" id="start" name="trip-start" value="yyyy-07-22" min="2021-07-07" max="2022-12-31">
+
+        <br>
+
+<!-- Here the customer can select their time to pick up their groceries. -->
+        <p>Choose a pick up time:</p> 
+        <input type="time" id="appt" name="appt" min="07:00" max="21:00" required>
+    </div>
+
+        <br>
+        <br>
+        <br>
+    </section>
+    
+        <!--Bread Sections-->
+                    <section class="container content-section">
+                        <div class="background">
+                        <div class="row"> 
+                            <div class="column">
+                                <div class="shop-item">
+                                    <span class="shop-item-title"><p>White bread</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/White_Bread.jpg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$1.29</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="shop-item">
+                                    <span class="shop-item-title"><p>Wheat Bread Bagels</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Wheat_Bread.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$1.29</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                            </div>
+    
+    
+                            <div class="column">
+                                <div class="shop-item">
+                                    <span class="shop-item-title"><p>Plain Bagels</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Plain_Bagels.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$2.00</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                </div>
+                            </div>
+                    
+    
+                            <div class="column">
+                                <div class="shop-item">
+                                    <span class="shop-item-title"><p>Bolillos</p></span>
+                                         <br>
+                                            <img class="shop-item-image" src="imagES/Bolillos.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$0.25/each</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                            <br>
+                            <br>
+                    
+                    
+<!--     Meat section-->
+
+                    <section class="container content-section">
+                        <div class="background">
+                        <div class="row"> 
+                            <div class="column">
+                                <div class="shop-items">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Ground Beef</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Ground_Beef.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$2.00/per pound</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+    
+                            <div class="column">
+                                <div class="shop-items">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Chicken Wing</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Chicken_Wing.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$2.23/per pound</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="column">
+                                <div class="shop-items">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Pork Ribs</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Pork_Ribs.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$3.00/per pound</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                    
+                            <div class="column">
+                                <div class="shop-items">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Chicken Breast</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Chicken Breast.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$2.45/per pound</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                        <br>
+                        <br>
+                            
+
+<!-- Seafood section-->
+
+
+                    <section class="container content-section">
+                        <div class="background">
+                        <div class="row"> 
+                            <div class="column">
+                                <div class="shop-items">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Wild Salmon</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Wild_Salmon.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$3.00</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="shop-items">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Crab Leg</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Crab_Legs.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$3.50</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="column">
+                                <div class="shop-items">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Baby Shrimp</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Baby_Shrimp.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$4.00</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="shop-items">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Live Lobster</p></span>
+                                        <br>
+                                            <img class="shop-item-image" src="imagES/Live_Lobster.jpeg" width="200" height="150">
+                                        <div class="shop-item-details">
+                                            <span class="shop-item-price">$4.50</span>
+                                            <br>
+                                            <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                    <br>
+                    <br>
+    <!-- Produce Section-->
+
+                        <section class="container content-section">
+                            <div class="background">
+                            <div class="row"> 
+                                <div class="column">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Avocados</p></span>
+                                            <br>
+                                                <img class="shop-item-image" src="imagES/Avocados.jpeg" width="200" height="150">
+                                            <div class="shop-item-details">
+                                                <span class="shop-item-price">$0.75/each</span>
+                                                <br>
+                                                <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                            </div>
+                                    </div>
+                                </div>
+    
+                                <div class="column">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Gala Apples</p></span>
+                                            <br>
+                                                <img class="shop-item-image" src="imagES/Gala_Apples.jpeg" width="200" height="150">
+                                            <div class="shop-item-details">
+                                                <span class="shop-item-price">$0.33/each</span>
+                                                <br>
+                                                <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                            </div>
+                                    </div>
+                                </div>
+        
+        
+                                <div class="column">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Broccoli Crown</p></span>
+                                            <br>
+                                                <img class="shop-item-image" src="imagES/Broccoli_Crown.jpeg" width="200" height="150">
+                                            <div class="shop-item-details">
+                                                <span class="shop-item-price">$1.00/per pound</span>
+                                                <br>
+                                                <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                            </div>
+                                    </div>
+                                </div>
+                        
+        
+                                <div class="column">
+                                    <div class="shop-item">
+                                        <span class="shop-item-title"><p>Mango Large</p></span>
+                                             <br>
+                                                <img class="shop-item-image" src="imagES/Mango_Large.jpeg" width="200" height="150">
+                                            <div class="shop-item-details">
+                                                <span class="shop-item-price">$0.75/each</span>
+                                                <br>
+                                                <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column">
+                                        <div class="shop-item">
+                                            <span class="shop-item-title"><p>Cabbage</p></span>
+                                                <br>
+                                                    <img class="shop-item-image" src="imagES/Cabbage.jpeg" width="200" height="150">
+                                                <div class="shop-item-details">
+                                                    <span class="shop-item-price">$1.00/per pound</span>
+                                                    <br>
+                                                    <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column">
+                                        <div class="shop-item">
+                                            <span class="shop-item-title"><p>Roman Tomatoes</p></span>
+                                                <br>
+                                                    <img class="shop-item-image" src="imagES/Roman_Tomatoes.jpeg" width="200" height="150">
+                                                <div class="shop-item-details">
+                                                    <span class="shop-item-price">$0.98/per pound</span>
+                                                    <br>
+                                                    <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </section>
+                        <br>
+                        <br>
+        <!-- Dry Foods-->
+                        <section class="container content-section">
+                            <div class="background">
+                            <div class="row"> 
+                                <div class="column">
+                                    <div class="shop-items">
+                                        <div class="shop-item">
+                                            <span class="shop-item-title"><p>Dry Spaghetti</p></span>
+                                            <br>
+                                                <img class="shop-item-image" src="imagES/Spaghetti.jpeg" width="200" height="150">
+                                            <div class="shop-item-details">
+                                                <span class="shop-item-price">$1.19</span>
+                                                <br>
+                                                <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="column">
+                                    <div class="shop-items">
+                                        <div class="shop-item">
+                                            <span class="shop-item-title"><p>Corn Flakes</p></span>
+                                            <br>
+                                                <img class="shop-item-image" src="imagES/Corn_Flakes.jpeg" width="200" height="150">
+                                            <div class="shop-item-details">
+                                                <span class="shop-item-price">$2.59</span>
+                                                <br>
+                                                <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="column">
+                                    <div class="shop-items">
+                                        <div class="shop-item">
+                                            <span class="shop-item-title"><p>Potato Chips</p></span>
+                                            <br>
+                                                <img class="shop-item-image" src="imagES/Potato_Chips.jpeg" width="200" height="150">
+                                            <div class="shop-item-details">
+                                                <span class="shop-item-price">$2.79</span>
+                                                <br>
+                                                <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="column">
+                                    <div class="shop-items">
+                                        <div class="shop-item">
+                                            <span class="shop-item-title"><p>Coffe Grain</p></span>
+                                            <br>
+                                                <img class="shop-item-image" src="imagES/Coffee.jpg" width="200" height="150">
+                                            <div class="shop-item-details">
+                                                <span class="shop-item-price">$2.89</span>
+                                                <br>
+                                                <button class="btn btn-primary shop-item-button"type="button">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                        <br>
+                        <br>
+    
+
+</section>
+
+<!-- CART -->
+
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+        
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    <br>
+    <br>
+    <br>
+</section>
+<script> // makah abutahoun
+    if( document.readyState== 'loading'){ // first thing we need to check if the page is loading
+    document.addEventListener('DOMContentLoaded', ready)
+    }
+    else {
+       ready()
+    }
+    function ready(){  // we added the function ready so even if the page is not working our buttons will still work
+    var RemoveCartItemButtons = document.getElementsByClassName('btn-danger')
+    for( var i=0; i<RemoveCartItemButtons.length; i++){
+    var button = RemoveCartItemButtons [i]
+    button.addEventListener ('click', removeCartItem)
+    } // what this means it tells you when you click on something it will do it
+    
+    var quatityInputs= document.getElementsByClassName('cart-quantity-input')
+    for( var i=0; i<quatityInputs.length; i++){
+    var input =  quatityInputs[i]
+    input.addEventListener('change', quantityChanged)
+    }
+    // adding add to cart buttuon//
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    for (var i = 0; i < addToCartButtons.length; i++) {
+       var button = addToCartButtons[i]
+       button.addEventListener('click', addToCartClicked)
+    }
+    
+    //purchase button
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    }
+    function purchaseClicked(){
+       alert('Thank you for your purchase!! ')
+       var cartItems = document.getElementsByClassName('cart-items')[0]
+       while(
+           cartItems.hasChildNodes()){
+               cartItems.removeChild(cartItems.firstChild)
+           }
+    UpdateCartTotal()
+    }
+    
+    function removeCartItem(event){
+       var buttonclicked = event.target
+       buttonclicked.parentElement.parentElement.remove()
+       UpdateCartTotal()
+    }
+    function quantityChanged(event){
+       var input = event.target
+       if( isNaN(input.value) || input.value<= 0 ){ // means they're not allow to enter something under 0 as a quantity // isNaN is not a number? for example if the customer doesn't input anything
+    input.value=1
+       }
+       UpdateCartTotal()
+    }
+    
+    
+    function addToCartClicked(event){
+    
+       var button = event.target
+       var shopItem = button.parentElement.parentElement
+       var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
+       console.log(title , price, imageSrc)
+    addItemToCart(title , price, imageSrc)
+    UpdateCartTotal()
+    
+    }
+    function addItemToCart(title , price, imageSrc){
+       var CartRow = document.createElement('div')
+       CartRow.classList.add('cart-row')
+       var cartItems = document.getElementsByClassName('cart-items')[0]
+       var cartItemNames= cartItems.getElementsByClassName('cart-item-title')
+       for ( var i =0; i < cartItemNames.length; i++){
+    if ( cartItemNames[i].innerText == title) {
+       alert ('This item has already been added')
+       return
+    }
+       }
+    
+       var CartRowContents= `
+       <div class="cart-item cart-column">
+                   <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+                   <span class="cart-item-title"> ${title} </span>
+               </div>
+               <span class="cart-price cart-column"> ${price}</span>
+               <div class="cart-quantity cart-column">
+                   <input class="cart-quantity-input" type="number" value="1">
+                   <button class="btn btn-danger" type="button">REMOVE</button>
+               </div>`
+               CartRow.innerHTML = CartRowContents
+       cartItems.append(CartRow)
+       CartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+       CartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+    }
+    
+    function UpdateCartTotal(){ // our actual shopping cart
+    var cartItemContainer= document.getElementsByClassName('cart-items')[0]
+    var CartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for( var i=0; i<CartRows.length; i++){
+    var CartRow = CartRows[i] // to show us to price and quantity
+    var priceElement = CartRow.getElementsByClassName('cart-price')[0]
+    var quantityElement = CartRow.getElementsByClassName('cart-quantity-input')[0]
+    var price =  parseFloat(    priceElement.innerText.replace('$', ''))
+    var quantity = quantityElement.value
+    total = total + (price * quantity) // display the price
+    }
+    total = Math.round(total * 100 ) / 100 // math. round bascially rounds our number to 2 decimal number not more
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total // adding $ infront of the price
+    
+
+}
+</script>
+<form id="logout"action="/logout?_method=DELETE" method ="POST"> 
+    <button type="submit" > LOGOUT!</button>
+  </form> <!-- logout-->
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="location">
+            <h1 class="formTitle">Los Angeles</h1>
+  
+            <div class="formMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423283.44334041205!2d-118.69261440224254!3d34.02072893572635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1638673429004!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            <div class="formHours">
+                <p class="formText">Hours: 9:00 a.m. to 11:00 p.m.</p>
+  
+            </div>
+            <div class="formHome">
+              <a href="/">Home page</a>
+            </div>
+        </form>
+    </div>
+      <style>
+        :root{
+          /* some basic colors if we need further styling */
+      --primaryColor: rgb(0, 0, 255);
+      --primaryColorShaded: rgb(5, 14, 117);
+      --SecondaryColor: rgb(0, 255, 8);
+      --border-radius: 10px;
+  }
+  body{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18;
+      background:url(./images/LosAngeles.jpg);
+      
+  }
+  
+  .container{
+      width: 700px;
+      margin: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0 40px black;
+      border-radius: var(--border-radius);
+      background: white;
+  }
+  
+  .formTitle{
+      margin-bottom: 2rem;
+      text-align: center;
+  }
+  
+  .formMap{
+      width: 100%;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      align-content: center;
+  }
+  .formText{
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 12;
+  }
+  .formHome{
+      text-align: center;
+  }
+      </style>
+</body>
+</html>

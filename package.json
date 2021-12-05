@@ -1,0 +1,37 @@
+{
+  "name": "onlinestore",
+  "version": "1.0.0",
+  "description": "Team members: Makah Abutahoun  Julie Nguyen Alexis Ceballos Andrew Palacios Chau Nguyen ////",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAKAHAL/OnlineStore.git"
+  },
+  "author": "makah abutahoun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAKAHAL/OnlineStore/issues"
+  },
+  "homepage": "https://github.com/MAKAHAL/OnlineStore#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body": "^5.1.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "flash": "^1.1.0",
+    "html": "^1.0.0",
+    "method-override": "^3.0.0",
+    "parser": "^0.1.4",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
